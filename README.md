@@ -61,8 +61,18 @@ graph TD
 - [Backend](https://github.com/Nexylor-Tech/cognexa-backend) 
 - [Frontend](https://github.com/Nexylor-Tech/cognexa-frontend)
 - [Worker](https://github.com/Nexylor-Tech/worker)
-- [MCP Agent](https://github.com/Nexylor-Tech/cognexa-agent)
-- [MeetingBot](https://github.com/Nexylor-Tech/meetingbot) (Under development)
+- [MCP Agent](https://github.com/Nexylor-Tech/cognexa-agent) 
+- [MeetingBot](https://github.com/Nexylor-Tech/meetingbot)
+
+> [!NOTE]
+> All the repositories are in development phase.
+
+### Access urls
+- [public waitlist](https://cognexa.cloud)
+- [beta development](https://beta.cognexa.cloud)
+
+> [!WARNING]
+> Beta link contains breaking changes, please refrain from using it with ur real email. For development purposes only.
 
 <details>
 
@@ -78,7 +88,7 @@ graph TD
       subgraph Orchestration_Layer [AI Agent Service - Python/LangGraph]
           Agent[FastAPI Agent Service]
           Planner[LangGraph Planner]
-          GeminiLLM[Gemini 1.5 Pro]
+          GeminiLLM[Gemini 2.5 Flash]
       end
   
       subgraph Backend_Layer [Core Backend - Bun/Elysia]
@@ -92,7 +102,7 @@ graph TD
           Worker[Python Worker]
           Redis[(Redis Broker)]
           Chunker[Text Chunker]
-          GeminiEmbed[Gemini embedding-001]
+          GeminiEmbed[gemini-embedding-001]
       end
   
       subgraph Storage_Layer [Data & Persistence]
